@@ -1,0 +1,191 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:focus, *:focus {
+    outline: none;
+}
+
+dl, dt, dd, ol, ul, li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: inherit;
+}
+
+body {
+    visibility: hidden;
+}
+
+.toast {
+    position: fixed;
+    z-index: 500;
+    white-space: nowrap;
+    width: auto;
+    padding: 0 2.4rem;
+    height: 4.4rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 4.4rem;
+}
+
+.init-toast.toast {
+    display: none;
+    position: fixed;
+    max-width: 34.5rem;
+    padding: 0 2.4rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 4.4rem;
+}
+
+/* 遮罩层 */
+
+.mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+}
+
+/* display */
+
+summary {
+    display: list-item;
+}
+
+.hide, [hidden], template {
+    display: none;
+}
+
+.block, details, iframe {
+    display: block;
+}
+
+/* 浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 文字定位 */
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+/* 定位、居中 */
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.horMid {
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.verMid {
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.marginMiddle {
+    margin: 0 auto;
+}
+
+.imgMid {
+    vertical-align: middle;
+}
+
+/* 清除浮动 */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+
+/* 强制不换行 */
+
+.nowrap {
+    white-space: nowrap;
+    word-break: break-all;
+}

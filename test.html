@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>测试页</title>
+    <style>
+        .test {
+            height: 100%;
+        }
+        .box1, .box2 {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
+        .box2 {
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .inp {
+            display: inline-block;
+        }
+        .url-detail {
+            width: 300px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        .btn {
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">
+        <div class="box1">
+            <div class="inp">
+                <textarea type="text" class="url-detail"></textarea>
+            </div>
+        </div>
+        <div class="box2">
+            <button class="btn">跳转</button>
+        </div>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/test.js"></script>
+</body>
+
+</html>
